@@ -15,7 +15,7 @@ Ingeniero Mecánico egresado de la **Universidad Central de Venezuela (UCV)** co
 *   **Domótica e Integración:** Programación y puesta en marcha de sistemas inteligentes (casas inteligentes/edificios), protocolos de comunicación (Zigbee, Modbus, Wi-Fi, Ethernet), integración de controladores lógicos y actuadores.
 *   **Redes e Infraestructura IT:** Resolución de problemas de redes TCP/IP, direccionamiento IP, diagnóstico de conectividad LAN/WLAN y cableado estructurado.
 *   **Software e Inteligencia Artificial:** Desarrollo web y análisis de datos (Data Analytics) con enfoque en IA. Dominio de Python, SQL, integración de APIs y diseño de algoritmos de optimización.
-*   **Habilidades Blandas:** Liderazgo técnico, docencia/capacitación universitaria, gestión de proyectos de automatización, resolución analítica de problemas bajo presión.
+*   **Habilidades Blandas:** Aprendizaje acelerado y alta adaptabilidad para dominar nuevos procesos, metodologías y funciones en cualquier área técnica de forma rápida. Liderazgo técnico, docencia/capacitación universitaria, y resolución analítica de problemas bajo presión.
 
 ---
 
