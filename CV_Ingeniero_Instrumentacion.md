@@ -52,5 +52,5 @@ Ingeniero Mecánico egresado de la **Universidad Central de Venezuela (UCV)** co
 ---
 
 ## CERTIFICACIONES Y CURSOS
-*   *Certificaciones y cursos en Inteligencia Artificial y Machine Learning* – [Detallar nombres de cursos o plataformas ej. Coursera, DeepLearning.AI, etc.]
+*   **Certificado de Introducción a la IA** – BIG school (Mayo 2025) | Curso online de Inteligencia Artificial sobre ChatGPT, GPTs Personalizados y automatización con Make (Duración: 4 horas).
 *   *Sistemas SCADA y Programación de PLCs* – [En preparación / Autodidacta]
