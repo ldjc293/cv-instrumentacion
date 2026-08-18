@@ -1,0 +1,683 @@
+/* -------------------------------------------------------------
+   CORE DESIGN SYSTEM
+   ------------------------------------------------------------- */
+:root {
+    --bg-primary: #f8fafc;
+    --bg-surface: #ffffff;
+    --border-color: #e2e8f0;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --primary: #0f766e; /* Deep Teal/Emerald for engineering accent */
+    --primary-hover: #0d9488;
+    --primary-light: #f0fdfa;
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'Fira Code', monospace;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* -------------------------------------------------------------
+   HEADER SECTON
+   ------------------------------------------------------------- */
+.header {
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    padding: 48px 0 32px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.header-info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-family: var(--font-mono);
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item svg {
+    color: var(--text-muted);
+}
+
+a.contact-item:hover {
+    color: var(--primary);
+}
+
+a.contact-item:hover svg {
+    color: var(--primary);
+}
+
+/* -------------------------------------------------------------
+   BUTTONS
+   ------------------------------------------------------------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-primary svg {
+    stroke: currentColor;
+}
+
+/* -------------------------------------------------------------
+   TABS NAV
+   ------------------------------------------------------------- */
+.tabs-nav {
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: var(--radius-md);
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.tab-btn.active {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+/* -------------------------------------------------------------
+   CONTENT TABS
+   ------------------------------------------------------------- */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* -------------------------------------------------------------
+   SECTIONS
+   ------------------------------------------------------------- */
+.section {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* -------------------------------------------------------------
+   SKILLS GRID
+   ------------------------------------------------------------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 20px;
+}
+
+.skill-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.skill-card ul {
+    list-style-type: none;
+}
+
+.skill-card li {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    padding-left: 12px;
+    position: relative;
+}
+
+.skill-card li::before {
+    content: "•";
+    color: var(--primary-hover);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* -------------------------------------------------------------
+   TIMELINE
+   ------------------------------------------------------------- */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    border: 2px solid var(--bg-surface);
+}
+
+.timeline-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.timeline-header .role {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1 1 100%;
+}
+
+.timeline-header .company {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+    font-family: var(--font-mono);
+}
+
+.timeline-header .date {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.timeline-details {
+    list-style-type: none;
+}
+
+.timeline-details li {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.timeline-details li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-hover);
+}
+
+/* -------------------------------------------------------------
+   PROJECTS
+   ------------------------------------------------------------- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-hover);
+}
+
+.project-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* -------------------------------------------------------------
+   EDUCATION & CERTIFICATIONS
+   ------------------------------------------------------------- */
+.education-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.education-block .degree {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.education-block .university {
+    font-size: 14px;
+    color: var(--primary);
+    font-family: var(--font-mono);
+}
+
+.education-block .grad-date {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.certifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cert-item {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+}
+
+.cert-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cert-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: block;
+}
+
+.cert-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* -------------------------------------------------------------
+   COVER LETTER CONTENT
+   ------------------------------------------------------------- */
+.cover-letter-content {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    box-shadow: var(--shadow-sm);
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.letter-date {
+    margin-bottom: 24px;
+    color: var(--text-muted);
+}
+
+.recipient-info {
+    margin-bottom: 24px;
+}
+
+.letter-subject {
+    margin-bottom: 24px;
+    color: var(--primary);
+}
+
+.cover-letter-content p {
+    margin-bottom: 20px;
+}
+
+.cover-letter-content ol {
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+
+.cover-letter-content li {
+    margin-bottom: 16px;
+}
+
+.letter-signature {
+    margin-top: 40px;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 24px;
+}
+
+.signature-name {
+    font-size: 16px;
+    color: var(--primary);
+}
+
+/* -------------------------------------------------------------
+   FOOTER
+   ------------------------------------------------------------- */
+.footer {
+    text-align: center;
+    padding: 32px 0;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+/* -------------------------------------------------------------
+   RESPONSIVE DESIGN
+   ------------------------------------------------------------- */
+@media (max-width: 640px) {
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .actions {
+        align-self: flex-start;
+    }
+    .timeline-header .company {
+        flex: 1 1 100%;
+    }
+    .cover-letter-content {
+        padding: 24px;
+    }
+}
+
+/* -------------------------------------------------------------
+   PRINT MEDIA STYLE SHEET (Optimized PDF export)
+   ------------------------------------------------------------- */
+@media print {
+    /* Reset margins and backgrounds */
+    body {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    /* Force all tabs to show appropriately or focus on active print */
+    #cv-tab {
+        display: block !important;
+    }
+
+    #cover-letter-tab {
+        display: none !important; /* Hide letter on main resume print */
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header {
+        padding: 0 0 15px 0;
+        border-bottom: 2px solid #000000;
+    }
+
+    .header-info h1 {
+        font-size: 24pt;
+        margin-bottom: 4px;
+    }
+
+    .subtitle {
+        font-size: 12pt;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+
+    .contact-links {
+        gap: 10px 15px;
+    }
+
+    .contact-item {
+        font-size: 10pt;
+        color: #000000;
+    }
+
+    .contact-item svg {
+        display: none; /* Hide SVGs on print to save space and look clean */
+    }
+
+    .section {
+        border: none;
+        box-shadow: none;
+        padding: 15px 0 0 0;
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+    }
+
+    .section h2 {
+        font-size: 14pt;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 3px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .section p {
+        font-size: 10.5pt;
+        color: #000000;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .skill-card {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .skill-card h3 {
+        font-size: 11pt;
+        color: #000000;
+        margin-bottom: 5px;
+    }
+
+    .skill-card li {
+        font-size: 9.5pt;
+        color: #000000;
+        margin-bottom: 4px;
+    }
+
+    .timeline {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    .timeline-header {
+        margin-bottom: 5px;
+    }
+
+    .timeline-header .role {
+        font-size: 11pt;
+        font-weight: 700;
+    }
+
+    .timeline-header .company {
+        font-size: 10pt;
+        color: #000000;
+    }
+
+    .timeline-header .date {
+        font-size: 9.5pt;
+        color: #000000;
+    }
+
+    .timeline-details li {
+        font-size: 10pt;
+        color: #000000;
+        margin-bottom: 3px;
+        padding-left: 10px;
+    }
+
+    .timeline-details li::before {
+        content: "-";
+        left: 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .project-card {
+        border: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .project-card h3 {
+        font-size: 10pt;
+        margin-bottom: 3px;
+    }
+
+    .project-card p {
+        font-size: 9pt;
+        color: #000000;
+    }
+
+    .education-block {
+        display: flex;
+    }
+
+    .education-block .degree {
+        font-size: 11pt;
+    }
+
+    .education-block .university {
+        font-size: 10pt;
+        color: #000000;
+    }
+
+    .education-block .grad-date {
+        font-size: 10pt;
+        color: #000000;
+    }
+}
