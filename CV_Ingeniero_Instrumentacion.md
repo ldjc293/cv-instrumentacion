@@ -34,6 +34,12 @@ Ingeniero Mecánico egresado de la **Universidad Central de Venezuela (UCV)** co
 *   **Calibración y Pruebas:** Dirección de prácticas de calibración de sensores de presión (manómetros, transmisores) y temperatura (termopares, RTDs), enseñando metodologías de ajuste de cero y spam.
 *   **Análisis Teórico-Práctico:** Mentoría en la interpretación de diagramas P&ID (tuberías e instrumentación), selección de válvulas de control y análisis del comportamiento de lazos de control de procesos.
 
+### **Especialista en Diagnóstico y Soporte Electrónico**  
+*Servicio Técnico Independiente (Emprendimiento)* | *2020 – 2023*
+*   **Diagnóstico a Nivel de Componentes:** Detección de fallas y reparación de placas de circuitos impresos (PCBs), módulos de control y fuentes de alimentación en televisores, computadoras y electrodomésticos.
+*   **Uso de Instrumentación Electrónica:** Operación constante de equipos de medición (multímetros, osciloscopios, fuentes variables) y herramientas de retrabajo térmico y soldadura de precisión.
+*   **Interpretación de Planos:** Análisis de diagramas y esquemáticos electrónicos de fabricantes para la localización sistemática de fallas y sustitución óptima de componentes defectuosos.
+
 ---
 
 ## PROYECTOS DESTACADOS
