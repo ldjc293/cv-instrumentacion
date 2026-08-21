@@ -3,13 +3,7 @@
 **Luis Daniel Jiménez Campos**  
 Caracas, Venezuela | +58 414 2576382 | ldjc293@gmail.com | [github.com/ldjc293](https://github.com/ldjc293)  
 
- Caracas, 18 de agosto de 2026
-
-**A la atención del Equipo de Reclutamiento y Selección / Hiring Manager**  
-[Nombre de la Empresa Objetivo]  
-[Dirección de la Empresa o Modalidad Remoto/Híbrido]  
-
-**Asunto: Postulación al puesto de Ingeniero de Instrumentación y Control**
+**Postulación al puesto de Ingeniero de Instrumentación y Control**
 
 Estimados miembros del equipo de selección:
 
