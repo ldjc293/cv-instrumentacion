@@ -1,5 +1,5 @@
 # Luis Daniel Jiménez Campos
-**Ingeniero Mecánico | Especialista en Instrumentación, Domótica e IA**  
+**Ingeniero Mecánico | Instrumentación, Domótica e IA**  
 Caracas, Caricuao, Distrito Capital, Venezuela | +58 414 2576382 | ldjc293@gmail.com | [github.com/ldjc293](https://github.com/ldjc293) | [linkedin.com/in/luis-jimenez-campos](https://linkedin.com/in/luis-jimenez-campos)
 
 ---
